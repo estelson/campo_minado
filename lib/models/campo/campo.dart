@@ -1,4 +1,4 @@
-import 'package:campo_minado/models/campo/explosao_exception.dart';
+import 'package:campo_minado/models/exceptions/explosao_exception.dart';
 
 class Campo {
   final int linha;
