@@ -14,6 +14,7 @@ class TabuleiroWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: GridView.count(
+        physics: BouncingScrollPhysics(),
         crossAxisCount: tabuleiro.colunas,
         children: tabuleiro.campos.map((campo) {
           return CampoWidget(
