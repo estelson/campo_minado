@@ -1,3 +1,4 @@
+import 'package:campo_minado/components/resultado_widget.dart';
 import 'package:flutter/material.dart';
 
 class CampoMinadoApp extends StatelessWidget {
@@ -7,11 +8,16 @@ class CampoMinadoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Campo Minado"),
+        appBar: ResultadoWidget(
+          venceu: false,
+          onReiniciar: _reiniciar,
         ),
         body: Text("Tabuleiro"),
       ),
     );
+  }
+
+  _reiniciar() {
+    debugPrint("reiniciar...");
   }
 }
