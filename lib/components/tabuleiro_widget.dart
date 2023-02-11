@@ -13,6 +13,7 @@ class TabuleiroWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(left: 8, right: 8),
       child: GridView.count(
         physics: BouncingScrollPhysics(),
         crossAxisCount: tabuleiro.colunas,
